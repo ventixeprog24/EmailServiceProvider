@@ -12,7 +12,7 @@ public class Program
 
         // Add services to the container.
         builder.Services.AddGrpc();
-        builder.Services.AddSingleton(x => new EmailClient(builder.Configuration["ACS:ConnectionString"]));
+        builder.Services.AddSingleton(x => new EmailClient(builder.Configuration["ConnectionString:ACS:ConnectionString"]));
         builder.Services.AddSingleton<EmailResultReplyFactory>();
 
         builder.Services.AddLogging();
