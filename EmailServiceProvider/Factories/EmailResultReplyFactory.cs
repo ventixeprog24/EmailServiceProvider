@@ -4,7 +4,7 @@ namespace EmailServiceProvider.Factories
 {
     public class EmailResultReplyFactory
     {
-        public EmailReply CreateSucceesReply(EmailResultDto result)
+        public virtual EmailReply CreateSucceesReply(EmailResultDto result)
         {
             return new EmailReply
             {
@@ -13,7 +13,7 @@ namespace EmailServiceProvider.Factories
             };
         }
 
-        public EmailReply CreateFailedReply(EmailResultDto result)
+        public virtual EmailReply CreateFailedReply(EmailResultDto result)
         {
             return new EmailReply
             {
