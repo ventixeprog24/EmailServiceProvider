@@ -47,3 +47,5 @@ As a client: Copy the proto-file (***email.proto***) from EmailServiceProvider/P
             Console.WriteLine($"Failed to send email: {response.Result}");
         }
 ```
+
+![picture of sequence diagram](emailserviceprovider-sequence-diagram.png)
